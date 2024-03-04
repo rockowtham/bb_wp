@@ -1,0 +1,48 @@
+.merchant-module-page-preview-browser-inner {
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.merchant-flexible-content-control.buy-x-get-y-style {
+  .layout:not(.active) {
+    border-color: #5c5f62;
+  }
+
+  .layout {
+    .layout-body {
+      padding: 15px;
+      grid-gap: unset;
+
+      .merchant-module-page-setting-field {
+        margin-bottom: 20px;
+      }
+
+      .merchant-module-page-setting-field-text input{
+        padding: 12px 8px;
+      }
+    }
+  }
+}
+
+.merchant-bogo-product-y {
+  border: 1px solid;
+}
+
+.rtl {
+  .merchant-bogo-arrow {
+    right: unset;
+    left: -30px;
+    transform: rotate(180deg);
+  }
+
+  .merchant-bogo-product-contents {
+    padding-left: unset;
+    padding-right: 10px;
+  }
+}

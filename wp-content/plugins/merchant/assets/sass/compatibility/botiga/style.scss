@@ -1,0 +1,87 @@
+
+.merchant-theme-botiga {
+
+	/* Products */
+	.botiga-add-to-cart-button-layout3 {		
+		.add_to_cart_button:hover,
+		.product_type_grouped:hover,
+		.single_add_to_cart_button:hover {
+			animation: none;
+		}
+	}
+	
+	ul.products.columns-4 li.product .loop-button-wrap .button,
+	ul.products.columns-5 li.product .loop-button-wrap .button,
+	ul.products.columns-6 li.product .loop-button-wrap .button,
+	ul.wc-block-grid__products.columns-4 li.product .loop-button-wrap .button,
+	ul.wc-block-grid__products.columns-5 li.product .loop-button-wrap .button,
+	ul.wc-block-grid__products.columns-6 li.product .loop-button-wrap .button {
+		width: 100%;
+	}
+	
+	.products {
+		.product {
+			
+			a.merchant_buy_now_button {
+				display: inline-block;
+			}
+		}
+	}
+	
+	.product {
+		.single_add_to_cart_button.merchant_buy_now_button {
+			margin-left: 0;
+		}
+		
+		.button-layout2 + .merchant_buy_now_button {
+			margin-top: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	
+	/* Shopify checkout */
+	.botiga-sc-payment-methods {
+		+ #merchant_agree_to_terms_field {
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+	}
+
+	/* Frequently Bought Together */
+	.mrc-fbt-savings-total-mini-cart {
+		color: var(--bt-color-heading-4, #212121);
+		background-color: var(--bt-color-content-cards-bg, #f5f5f5);
+		padding: .9rem 1.9rem;
+		order: 11;
+
+		strong {
+			font-weight: 400;
+		}
+
+		.woocommerce-Price-amount {
+			font-weight: 500;
+		}
+	}
+
+	/* Sticky Add To Cart */
+	.merchant-sticky-add-to-cart-wrapper {
+		.merchant-sticky-add-to-cart-wrapper-content {
+			.merchant-sticky-add-to-cart-item {
+				&.product-addtocart {
+					.quantity {
+						min-width: 100px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Wishlist */
+	&.page-template-wishlist {
+		.mrc-container {
+			padding: 0;
+		}
+	}
+
+}
